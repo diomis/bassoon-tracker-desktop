@@ -42,7 +42,6 @@ UI.app_menu = function(container){
                 {label: "File Operations" , "command" : COMMAND.showFileOperations},
                 {label: "Sample Editor" , "command" : COMMAND.showSampleEditor},
                 {label: "Piano" , "command" : COMMAND.togglePiano},
-                {label: "Nibbles" , "command" : COMMAND.nibbles},
                 //{label: "Generator" , "command" : COMMAND.generator},
                 {label: "Performance stats" , "command" : COMMAND.showStats}
             ]},

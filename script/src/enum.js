@@ -103,7 +103,6 @@ var COMMAND = {
 	toggleAppSideBar: 25,
 	undo: 26,
 	redo: 27,
-	nibbles: 28,
 	generator: 29
 };
 

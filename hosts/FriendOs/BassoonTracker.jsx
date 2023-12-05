@@ -142,10 +142,6 @@ Application.drawMenu = function(){
 						name: i18n('Piano'),
 						command: 'bsn_togglePiano'
 					},
-					{
-						name: i18n('Nibbles'),
-						command: 'bsn_nibbles'
-					}
 				]
 			},
 			{

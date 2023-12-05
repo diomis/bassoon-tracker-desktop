@@ -57,17 +57,6 @@ UI.pattern_sidebar = function(){
     pianoButton.onClick = function(){App.doCommand(COMMAND.togglePiano)};
     me.addChild(pianoButton);
 
-    var nibblesButton = UI.button();
-    nibblesButton.setProperties({
-        label: "",
-        textAlign:"center",
-        background: UI.Assets.buttonLightScale9,
-        hoverBackground: UI.Assets.buttonLightHoverScale9,
-        image: Y.getImage("nibbles")
-    });
-    nibblesButton.onClick = function(){App.doCommand(COMMAND.nibbles)};
-    me.addChild(nibblesButton);
-
 
     me.onResize = function(){
         sideLabel.setSize(me.width,Layout.trackControlHeight);
@@ -81,21 +70,11 @@ UI.pattern_sidebar = function(){
             height:buttonHeight
         });
 
-        nibblesButton.setProperties({
-            left:0,
-            top: me.height - buttonHeight - buttonHeight,
-            width: me.width,
-            height:buttonHeight
-        });
-
         var max = buttonsSideInfo.length;
         for (i = 0;i<max;i++){
             var button = buttonsSide[i];
             var buttonTop = (i*buttonHeight) + sideLabel.height;
             var buttonLeft = 0;
-            if (buttonTop > nibblesButton.top-buttonHeight){
-                buttonLeft = -500;
-            }
 
             var background = UI.Assets.buttonLightScale9;
             var backgroundHover = UI.Assets.buttonLightHoverScale9;

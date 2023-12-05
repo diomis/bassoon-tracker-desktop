@@ -2,11 +2,6 @@ var Plugin = function(){
 	var me = {};
 	
 	var pluginSources={
-		"Nibbles":[
-			"script/plugins/games/nibbles/nibbles.js",
-			"script/plugins/games/nibbles/logo.png",
-			"script/plugins/games/nibbles/levels.png",
-			"script/plugins/games/nibbles/player1.png"],
 		"Generator":[
 			"script/plugins/apps/generator/generator.js",
 			"script/plugins/apps/generator/sin.png",

@@ -287,13 +287,6 @@
     "height": 20
   },
   {
-    "name": "nibbles",
-    "x": 88,
-    "y": 503,
-    "width": 82,
-    "height": 24
-  },
-  {
     "name": "oscilloscope",
     "x": 0,
     "y": 256,

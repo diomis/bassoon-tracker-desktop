@@ -120,19 +120,6 @@ var App = (function(){
                 case COMMAND.redo:
                     EventBus.trigger(EVENT.commandRedo);
                     break;
-				case COMMAND.nibbles:
-					Plugin.load("Nibbles",function(){
-						Nibbles.init({
-                            UI:UI,
-                            Input: Input,
-                            Y: Y,
-                            EventBus: EventBus,
-                            EVENT: EVENT,
-                            COMMAND: COMMAND,
-                            Layout: Layout
-                        });
-					});
-					break;
                 case COMMAND.generator:
                     Plugin.load("Generator",function(){
                         Generator.init({
