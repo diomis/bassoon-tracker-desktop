@@ -8,6 +8,7 @@ const createWindow = () => {
     })
 
     win.loadFile('index.html')
+    // win.loadFile('dev.html')
 }
 
 app.on('window-all-closed', () => {
