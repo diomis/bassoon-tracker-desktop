@@ -14,7 +14,8 @@ UI.pattern_sidebar = function(){
 
     var buttonsSide = [];
     var buttonsSideInfo=[
-        {label:"Demomusic", onClick:function(){Tracker.load(Host.getRemoteUrl() + 'demomods/demomusic.mod')}},
+        {label:"Nightfall", onClick:function(){Tracker.load(Host.getRemoteUrl() + 'demomods/jesper_kyd_-_nightfall.mod')}},
+        {label:"Metal Gear", onClick:function(){Tracker.load(Host.getRemoteUrl() + 'demomods/tara.mod')}},
         {label:"Stardust", onClick:function(){Tracker.load(Host.getRemoteUrl() + 'demomods/StardustMemories.mod')}},
         {label:"Space Debris", onClick:function(){Tracker.load(Host.getRemoteUrl() + 'demomods/spacedeb.mod')}},
         {label:"Tinytune", onClick:function(){Tracker.load(Host.getRemoteUrl() + 'demomods/Tinytune.mod')}},
