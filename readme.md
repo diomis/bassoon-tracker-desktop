@@ -1,21 +1,15 @@
-# BassoonTracker
+# BassoonTracker Desktop
 
-Browser-based old-school Amiga Music Tracker in plain old JavaScript.
+Electron fork of browser-based old-school Amiga Music Tracker in plain old JavaScript.
+It is a stripped down version of the original.
+
 
 ![BassoonTracker](./skin/bassoontracker_main.png?raw=true)
 
 Plays and edits Amiga Module files and FastTracker 2 XM files.  
-Live demo at [http://www.stef.be/bassoontracker/](http://www.stef.be/bassoontracker/)
 
 If you have ever heard of [Protracker](https://en.wikipedia.org/wiki/Protracker) or [Fasttracker](https://en.wikipedia.org/wiki/FastTracker_2), then you know the drill,   
 if not, then you are probably too young :-)
-
-###Requirements
-* This tracker requires a modern browser that supports [WebAudio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
-It's tested to work on Chrome, Firefox, Safari, Edge, Chrome on Android, mobile Safari and the Samsung Android Browser.
-It works best in Chrome.  
-* Midi support is not available in Firefox or Safari. 
-* Minimum requirements for mobile devices: IOS9 or Android 6
 
 ![BassoonTracker](./skin/bassoontracker_sampleeditor.png?raw=true)
 
@@ -47,9 +41,6 @@ It works best in Chrome.
 - Import 8bit WAV, 8SVX and RAW samples (as well as any other format [AudioContext](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext) can read, like .mp3 and .ogg)
 - Integrated sample editor: Edit and slice your samples right inside BassoonTracker
 - Full Undo/Redo in pattern editor and sample editor
-- Includes the historic ST-01 and ST-02 sample disks, released in 1987 (as well as a bunch of others)
-- The [modarchive API](https://modarchive.org/) is integrated to access several thousands of music files
-- The [modules.pl API](http://modules.pl/) is integrated to access even more music files
 - Export to .mod, .xm, .wav, and .mp3
 - Connect your Dropbox account to directly read and write your own files
 - Read more in [The Docs](https://www.stef.be/bassoontracker/docs/)
@@ -58,15 +49,6 @@ The playback engine has gone through extensive compatibility testing, but as the
 throughout different versions, there's always room for improvement.
 If you find a module that doesn't sound the way it should, let me know!
 There are still some very specific [Protracker 1 and 2 playback quirks](http://www.stef.be/bassoontracker/docs/trackerQuircks.txt) that are not implemented (and probably never will as they are too bat-shit-crazy)
-
-**Missing features and bugs:**
- - The following FastTracker features are not fully supported yet:
-   - Tremor
-   - "Set envelope position" command
-   - PingPong Loops are unrolled to normal loops (There's no difference in sound but if you save your XM file, your samples will have changed.)
-   - When writing XM files, patterns are not packed so the resulting files will probably be a little bigger than when saved with the real FastTracker 2.
- - Safari doesn't support WebAudio StereoPanners so songs will be played in mono on Safari.
- - Safari and Firefox don't support the [Web Midi Api](https://caniuse.com/midi) so no midi on those browsers.
  
 Note: if you use an AZERTY, QWERTZ or DVORAK keyboard, you can set that option in the settings to have the correct layout when playing notes on your computer keyboard.
 
@@ -82,26 +64,4 @@ Note: if you use an AZERTY, QWERTZ or DVORAK keyboard, you can set that option i
 	- Use "grunt player" to build the player-only version (you can find it the "player" directory).
 	- Use "grunt friend" to build the version for Friend OS (you can find it the "hosts/FriendOs/build" directory)
 
-**Future plans**  
-  - ~~MIDI support~~ -> Done!
-  - ~~Undo/redo on pattern edits and sample edits~~ -> Done!
-  - Implement [local file system access](https://web.dev/file-system-access/)  
-  - Export and import of .xi instruments.
-  - 3SM/Screamtracker file support, maybe OctaMED too.
-  - Allow synth/FM instruments next to sample instruments.
-  - Although the tracker concept is awesome - it also would be nice to integrate it in a more modern 
-  "horizontal block compose" style interface where you can re-use and combine tracks/patterns in a 
-  composition instead of endlessly copying tracks.
-  - Allow multiple notes per track (or at least give the option to let them play when a new note is triggered).
-  - More effects (echo, reverb, flange, etc.) should probably be implemented with graphical track-envelopes instead of instrument envelopes or more numerical effect parameters. All this would require (yet another) new file format, but that seems inevitable.
-  - Simpler HTML/CSS-based layout - maybe the canvas approach is too heavy for really large screens? (Done, but not maintained)
-  - Plugins:
-  	- Jukebox plugins, filter on genre/rating/etc.: hit play and let it perform.
-  	- More expanded sample editor with audio processing features - probably as an external plugin.
-  	- ~~Nibbles... we definitely need Nibbles.~~ -> We do!
-  
-
-**Player**
-If you want to integrate the BassoonTracker playback routines in your own website, check out the "Standalone Player" examples in the "[player](https://github.com/steffest/BassoonTracker/tree/master/player)" directory
-or visit the [live Player demo](http://www.stef.be/bassoontracker/player/).
 
