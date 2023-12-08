@@ -161,30 +161,16 @@
     "height": 11
   },
   {
-    "name": "mod",
+    "name": "module",
     "x": 596,
     "y": 246,
     "width": 12,
     "height": 11
   },
   {
-    "name": "module",
-    "x": 584,
-    "y": 257,
-    "width": 12,
-    "height": 11
-  },
-  {
     "name": "sample",
-    "x": 596,
-    "y": 257,
-    "width": 12,
-    "height": 11
-  },
-  {
-    "name": "xm",
     "x": 584,
-    "y": 277,
+    "y": 257,
     "width": 12,
     "height": 11
   },
@@ -285,6 +271,13 @@
     "y": 473,
     "width": 44,
     "height": 20
+  },
+  {
+    "name": "nibbles",
+    "x": 88,
+    "y": 503,
+    "width": 82,
+    "height": 24
   },
   {
     "name": "oscilloscope",
@@ -450,21 +443,21 @@
   {
     "name": "radio_big_active",
     "x": 596,
-    "y": 277,
+    "y": 257,
     "width": 11,
     "height": 11
   },
   {
     "name": "radio_big_inactive",
     "x": 607,
-    "y": 277,
+    "y": 257,
     "width": 11,
     "height": 11
   },
   {
     "name": "radio_inactive",
-    "x": 608,
-    "y": 257,
+    "x": 584,
+    "y": 277,
     "width": 10,
     "height": 10
   },

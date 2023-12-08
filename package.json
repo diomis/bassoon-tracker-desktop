@@ -4,7 +4,7 @@
   "description": "Old School Amiga mod and xm tracker in plain javascript with Electron support",
   "main": "src/main.js",
   "scripts": {
-    "start": "grunt && electron .",
+    "start": "grunt && grunt sprites && electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "https://github.com/diomis/bassoon-tracker-desktop",
