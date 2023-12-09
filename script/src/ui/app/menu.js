@@ -143,7 +143,8 @@ UI.app_menu = function(container){
 
     me.renderInternal = function(){
         if (SETTINGS.showMidi && !Midi.isEnabled()){
-            me.ctx.fillStyle = "rgba(34, 49, 85, 0.5)";
+            // me.ctx.fillStyle = "rgba(34, 49, 85, 0.5)";
+            me.ctx.fillStyle = "rgba(30, 30, 30, 0.6)";
             me.ctx.fillRect(midiLabel.left,midiBox.top,50,midiBox.height);
         }
     }

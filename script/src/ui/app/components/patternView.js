@@ -227,10 +227,11 @@ UI.app_patternView = function(x,y,w,h){
 
             if (pattern){
 
-                if (Tracker.isRecording()){
+                if (Tracker.isRecording()) {
                     me.ctx.fillStyle = "#A50B0F";
-                }else{
-                    me.ctx.fillStyle = "#202E58";
+                } else{
+                    // me.ctx.fillStyle = "#202E58";
+                    me.ctx.fillStyle = "#1f1f1f";
                 }
 
                 me.ctx.fillRect(0,centerLineTop,(me.width-0*2),centerLineHeight);
@@ -258,7 +259,8 @@ UI.app_patternView = function(x,y,w,h){
                 }
 
                 //me.ctx.fillStyle = "rgba(231,198,46,.5)";
-                me.ctx.fillStyle = "rgba(220,220,220,.3)";
+                // me.ctx.fillStyle = "rgba(220,220,220,.3)";
+                me.ctx.fillStyle = "rgba(30, 30, 30, 0.6)";
                 me.ctx.fillRect(cursorX,centerLineTop,cursorWidth,lineHeight+2);
 
 

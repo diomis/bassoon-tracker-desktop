@@ -201,7 +201,8 @@ UI.button = function(x,y,w,h,text){
             }
 
             if (me.isDisabled){
-				me.ctx.fillStyle = "rgba(34, 49, 85, 0.6)";
+				// me.ctx.fillStyle = "rgba(34, 49, 85, 0.6)";
+                me.ctx.fillStyle = "rgba(30, 30, 30, 0.6)";
 				me.ctx.fillRect(0,0,me.width,me.height);
             }
 

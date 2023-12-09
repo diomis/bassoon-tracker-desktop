@@ -70,7 +70,8 @@ UI.vumeter = function(){
 			baseCtx.drawImage(img,i*(dotWidth+margin),0,dotWidth,vuHeight);
 			baseActiveCtx.drawImage(imgActive,i*(dotWidth+margin),0,dotWidth,vuHeight);
 		}
-        me.ctx.fillStyle = "#253352";
+        // me.ctx.fillStyle = "#253352";
+		me.ctx.fillStyle = "#1f1f1f";
 	}
 
 

@@ -178,7 +178,8 @@ UI.submenu = function(x,y,w,h){
                 }
 
                 if (disabled){
-                    me.ctx.fillStyle = "rgba(88,105,129,0.6)";
+                    // me.ctx.fillStyle = "rgba(88,105,129,0.6)";
+                    me.ctx.fillStyle = "rgba(30, 30, 30, 0.6)";
                     me.ctx.fillRect(textX,textY,textWidth,itemHeight);
                 }
                 textY += itemHeight;

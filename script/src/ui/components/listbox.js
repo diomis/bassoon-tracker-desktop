@@ -178,12 +178,14 @@ UI.listbox = function(x,y,w,h){
 
                     if (targetCtx){
                         if (hoverIndex+visibleIndex === i){
-                            targetCtx.fillStyle = 'rgba(110,130,220,0.07)';
+                            // targetCtx.fillStyle = 'rgba(110,130,220,0.07)';
+                            me.ctx.fillStyle = "rgba(30, 30, 30, 0.4)";
                             targetCtx.fillRect(0,_y-highlightY,me.width-2,lineHeight);
                         }
 
                         if (me.selectedIndex === i){
-                            targetCtx.fillStyle = 'rgba(110,130,220,0.15)';
+                            //targetCtx.fillStyle = 'rgba(110,130,220,0.15)';
+                            me.ctx.fillStyle = "rgba(30, 30, 30, 0.6)";
                             targetCtx.fillRect(0,_y-highlightY,me.width-2,lineHeight);
                         }
 

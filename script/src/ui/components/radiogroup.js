@@ -118,7 +118,8 @@ UI.radioGroup = function(x,y,w,h){
 				if (item.active){
 
 					if (highLightSelection){
-						me.ctx.fillStyle = 'rgba(100,100,255,0.1';
+						// me.ctx.fillStyle = 'rgba(100,100,255,0.1';
+						me.ctx.fillStyle = "rgba(30, 30, 30, 0.2)";
 						me.ctx.fillRect(0,itemTop,me.width-2,itemHeight);
 					}
 

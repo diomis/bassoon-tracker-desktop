@@ -213,7 +213,8 @@ UI.visualiser = function(){
                 me.ctx.stroke();
 
                 if (isMute){
-                    me.ctx.fillStyle = "rgba(34, 49, 85, 0.5)";
+                    // me.ctx.fillStyle = "rgba(34, 49, 85, 0.5)";
+                    me.ctx.fillStyle = "rgba(30, 30, 30, 0.6)";
                     me.ctx.fillRect(pos.left,pos.top,pos.width,pos.height);
                 }
             }
