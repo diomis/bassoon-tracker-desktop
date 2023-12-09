@@ -6,7 +6,7 @@ const createWindow = () => {
         width: 1000,
         height: 800,
         autoHideMenuBar: true,
-        icon: process.platform !== 'darwin' ? 'icons/icon.ico' : 'icons/icon.icns'
+        icon: process.platform !== 'darwin' ? 'resources/icons/icon.ico' : 'resources/icons/icon.icns'
     })
 
     win.loadFile('index.html')
